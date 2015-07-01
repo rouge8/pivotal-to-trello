@@ -50,6 +50,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<highline>, [">= 1.6.20"])
       s.add_runtime_dependency(%q<ruby-trello>, [">= 1.1.3"])
       s.add_runtime_dependency(%q<pivotal-tracker>, [">= 0.5.12"])
+      s.add_runtime_dependency(%q<rest-client>, [">=1.7.2"])
       s.add_development_dependency(%q<rspec>, [">= 2.14.1"])
       s.add_development_dependency(%q<rdoc>, [">= 4.1.1"])
       s.add_development_dependency(%q<jeweler>, [">= 2.0.0"])
