@@ -16,6 +16,9 @@ module PivotalToTrello
 
       puts "\nBeginning import..."
       pivotal.stories(options.pivotal_project_id).each do |story|
+        # Try to avoid Trello API rate limits
+        sleep 0.2
+
         list_id = label = nil
 
         if story.current_state == 'accepted'
